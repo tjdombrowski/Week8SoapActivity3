@@ -20,7 +20,7 @@ class NdfdXMLBindingStubTest {
 
         String response = binding.latLonListZipCode("53714");
 
-        DwmlType dwml = (DwmlType) jaxbUnmarshaller.unmarshal(new StringReader(response)); //
+        DwmlType dwml = (DwmlType) jaxbUnmarshaller.unmarshal(new StringReader(response));
 
         assertEquals("43.0798,-89.3875", dwml.getLatLonList());
     }
